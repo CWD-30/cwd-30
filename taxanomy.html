@@ -28,7 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/magnifier.css">
   <!-- =======================================================
   * Template Name: Moderna - v4.8.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -124,7 +124,9 @@
     <hr>
     <div>
       <div class="col-md-12 sub-title">Global Distribution of Crops in the CWD30 dataset:</div>
-      <div style="text-align: center"><img style="width: 80%" src="assets/img/map.png"></div>
+      <div class="image-container">
+        <img id="myimage" src="assets/img/map.png" alt="Magnifiable Image">
+      </div>
     </div>
     <br>
 </section>
@@ -146,7 +148,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/magnifier.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            magnify("myimage", 2);
+        });
+    </script>
 </body>
 
 </html>

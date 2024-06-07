@@ -1,0 +1,24 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* or block if you want it to behave like a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+.image-container img {
+    width: 100%; /* Ensures the image fits the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 100px; /* Adjust the size of the magnifier */
+    height: 100px; /* Adjust the size of the magnifier */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
