@@ -27,7 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/magnifier.css">
   <!-- =======================================================
   * Template Name: Moderna - v4.8.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
@@ -109,10 +109,30 @@
                 <ul>
                   <div>The CWD30 dataset comprises a collection of 219,770 images that encompass 10 crop classes and 20 weed classes. These images capture various growth stages, multiple viewing angles, and diverse environmental conditions. The detailed hierarchical taxonomy information can be found <a href="https://drive.google.com/file/d/1lw8bYxVuYgd7vEzAzbYi3QXPPS3qYMuf/view?usp=sharing">here</a>.</div>                </ul>
               </li>
+
+              <!-- <hr> -->
+              <div>
+                <div class="col-md-12 sub-title">Sample Images</div>
+                <div class="image-container">
+                  <img id="myimage" src="assets/img/sample.png" alt="Magnifiable Image">
+                </div>
+              </div>
+              <br>
+              <hr>
+
               <li style="list-style-type:circle"><i style="font-size: 1.1em;">CWD30-S (Coming Soon!)</i></li>
               <li>
                 <ul>
-                  <div>CWD30-S is an extension of the CWD30 dataset, designed for semantic segmentation tasks. For each image in the training set (1,407 images) and validation set (772 images), we provide the following annotations in the corresponding sub-folders:</div>
+                  <div>CWD30-S is an extension of the CWD30 dataset, designed for semantic segmentation tasks. Following annotations will be provided:</div>
+
+                  <div>
+                    <div class="col-md-12 sub-title">Sample Images</div>
+                    <div class="image-container">
+                      <img id="myimage2" src="assets/img/sample2.png" alt="Magnifiable Image">
+                    </div>
+                  </div>
+                  <br>
+                  
                   <ul>
                     <li>
                       <strong>Semantics:</strong>
@@ -215,7 +235,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/magnifier.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            magnify("myimage", 2);
+            magnify("myimage2", 2); // Increase zoom to 3
+        });
+    </script>
 </body>
 
 </html>
