@@ -256,7 +256,70 @@ CWD30v2/
         </div>
       </div>
     </section>
+<!-- Naming Convention section -->
+<section class="naming-convention">
+  <div class="container">
+    <div class="section-title">
+      <h2>Dataset Naming Convention</h2>
+      <p>Understanding how our image files are named and organized</p>
+    </div>
 
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="naming-card">
+          <div class="naming-explanation">
+            <h4><i class="bi bi-card-heading"></i> File Naming Structure</h4>
+            <p>Each image filename contains important metadata about the sample:</p>
+            
+            <div class="naming-structure">
+              <div class="structure-part">
+                <span class="part-label">Macro Class</span>
+                <span class="part-example">WC</span>
+                <span class="part-desc">Weed or Crop</span>
+              </div>
+              <div class="structure-separator">_</div>
+              <div class="structure-part">
+                <span class="part-label">Micro Class</span>
+                <span class="part-example">K</span>
+                <span class="part-desc">Specific weed/crop type</span>
+              </div>
+              <div class="structure-separator">_</div>
+              <div class="structure-part">
+                <span class="part-label">Plant Age</span>
+                <span class="part-example">w</span>
+                <span class="part-desc">Weeks after planting</span>
+              </div>
+              <div class="structure-separator">_</div>
+              <div class="structure-part">
+                <span class="part-label">Angle</span>
+                <span class="part-example">45</span>
+                <span class="part-desc">Top view at 45°</span>
+              </div>
+              <div class="structure-separator">_</div>
+              <div class="structure-part">
+                <span class="part-label">ID</span>
+                <span class="part-example">029058</span>
+                <span class="part-desc">Unique image ID</span>
+              </div>
+            </div>
+            
+            <div class="example-filename mt-3">
+              <code>WC_K_W_45_029058.PNG</code>
+            </div>
+          </div>
+          
+          <div class="naming-image mt-4">
+            <h5><i class="bi bi-diagram-3"></i> Visual Explanation</h5>
+            <img src="assets/img/naming.png" alt="CWD30 Naming Convention Diagram" class="img-fluid rounded shadow">
+            <div class="text-center mt-2">
+              <small class="text-muted">Figure 1: Detailed breakdown of the CWD30 filename structure</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- Download Modal -->
     <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
       <div class="modal-dialog">
