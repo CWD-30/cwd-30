@@ -2031,3 +2031,76 @@ span.announcement{
 .small-cross {
   font-size: 12px;
 }
+
+/* Naming Convention Section Styles */
+.naming-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.naming-structure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.structure-part {
+  text-align: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-width: 100px;
+  margin: 5px;
+}
+
+.structure-part .part-label {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.structure-part .part-example {
+  display: block;
+  font-family: monospace;
+  background: white;
+  padding: 3px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.structure-part .part-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.structure-separator {
+  font-size: 1.5rem;
+  color: #6c757d;
+  padding: 0 5px;
+  align-self: center;
+}
+
+.example-filename {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  border-left: 4px solid #3498db;
+}
+
+.naming-image {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.naming-image img {
+  border: 1px solid #dee2e6;
+}
